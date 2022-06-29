@@ -38,7 +38,7 @@ while 1==1:
  
                 response = table.put_item(
                     Item = {
-                            'txnid': decimal.Decimal(customer),
+                            'txnid': decimal.Decimal(txnid),
                             'txndate': txndate,
                             'custid': decimal.Decimal(custid),
                             'amount': amount,
