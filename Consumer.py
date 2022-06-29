@@ -26,7 +26,7 @@ while 1==1:
                 txnid = int(data['txnid'])
                 txndate = data['txndate']
                 custid = int(data['custid'])
-                amount = double(data['amount'])
+                amount = data['amount']
                 category = data['category']
                 subcategory = data['subcategory']
                 city = data['city']
@@ -41,7 +41,7 @@ while 1==1:
                             'txnid': decimal.Decimal(customer),
                             'txndate': txndate,
                             'custid': decimal.Decimal(custid),
-                            'amount': decimal.Decimal(amount),
+                            'amount': amount,
                             'category': category,
                             'subcategory': subcategory,
                             'city': city,
